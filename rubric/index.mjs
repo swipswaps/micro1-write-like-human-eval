@@ -107,12 +107,17 @@ export function evaluatePair(pair) {
     A: { label: pair.responses.A.label, text: pair.responses.A.text, ...a },
     B: { label: pair.responses.B.label, text: pair.responses.B.text, ...b },
     catches: pair.catches,
-    note: buildNote(rubricPick, pair),
+    note: buildNote(rubricPick, pair, a, b),
   }
 }
 
-function buildNote(rubricPick, pair) {
-  const winner = rubricPick === 'A' ? pair.responses.A : pair.responses.B
-  const loser = rubricPick === 'A' ? pair.responses.B : pair.responses.A
-  return `Rubric picks ${rubricPick} (${winner.label}, ${winner.band} band); ${loser.label} scores in the ${loser.band} band. ${pair.catches}`
+// buildNote reads band from the scored results (a, b), not from the raw
+// pair responses. The previous version read pair.responses.X.band, which
+// does not exist — band is set by scoreResponse, not by the corpus.
+function buildNote(rubricPick, pair, a, b) {
+  const winner = rubricPick === 'A' ? a : b
+  const loser = rubricPick === 'A' ? b : a
+  const winnerLabel = rubricPick === 'A' ? pair.responses.A.label : pair.responses.B.label
+  const loserLabel = rubricPick === 'A' ? pair.responses.B.label : pair.responses.A.label
+  return `Rubric picks ${rubricPick} (${winnerLabel}, ${winner.band} band); ${loserLabel} scores in the ${loser.band} band. ${pair.catches}`
 }

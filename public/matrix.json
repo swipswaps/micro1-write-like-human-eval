@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:49:31.396Z",
+  "generatedAt": "2026-11-09T18:08:23.167Z",
   "generator": "scripts/review.mjs",
   "buildId": null,
   "dimensions": [
@@ -251,7 +251,7 @@
         ]
       },
       "catches": "A is grammatical, on-topic, and says nothing that could be wrong — which is exactly the problem. It names ACID, \"best practice\", and \"grow in your career\" without naming the three rows, the failure mode, or the thing the transaction does not protect against. The shortcut says A because it is longer. The rubric says B because B contains four claims that could be checked against the codebase and A contains none.",
-      "note": "Rubric picks B (B — the situated answer, undefined band); A — the fluent textbook answer scores in the undefined band. A is grammatical, on-topic, and says nothing that could be wrong — which is exactly the problem. It names ACID, \"best practice\", and \"grow in your career\" without naming the three rows, the failure mode, or the thing the transaction does not protect against. The shortcut says A because it is longer. The rubric says B because B contains four claims that could be checked against the codebase and A contains none."
+      "note": "Rubric picks B (B — the situated answer, publishable band); A — the fluent textbook answer scores in the ai-slop band. A is grammatical, on-topic, and says nothing that could be wrong — which is exactly the problem. It names ACID, \"best practice\", and \"grow in your career\" without naming the three rows, the failure mode, or the thing the transaction does not protect against. The shortcut says A because it is longer. The rubric says B because B contains four claims that could be checked against the codebase and A contains none."
     },
     {
       "pairId": "P2",
@@ -339,7 +339,7 @@
         ]
       },
       "catches": "An integrator cannot build against A. \"Multiple times\" is not a number, \"spaced out\" is not an interval, \"before giving up\" does not say what happens after, and \"reach out to support\" is not a deliverable. B is a specification: five attempts, named intervals, a failure definition, a dead-letter policy with a retention window, and the ordering caveat that is the actual integration hazard. The shortcut says A because it is longer and friendlier.",
-      "note": "Rubric picks B (B — the spec-shaped answer, undefined band); A — the reassuring answer scores in the undefined band. An integrator cannot build against A. \"Multiple times\" is not a number, \"spaced out\" is not an interval, \"before giving up\" does not say what happens after, and \"reach out to support\" is not a deliverable. B is a specification: five attempts, named intervals, a failure definition, a dead-letter policy with a retention window, and the ordering caveat that is the actual integration hazard. The shortcut says A because it is longer and friendlier."
+      "note": "Rubric picks B (B — the spec-shaped answer, publishable band); A — the reassuring answer scores in the ai-slop band. An integrator cannot build against A. \"Multiple times\" is not a number, \"spaced out\" is not an interval, \"before giving up\" does not say what happens after, and \"reach out to support\" is not a deliverable. B is a specification: five attempts, named intervals, a failure definition, a dead-letter policy with a retention window, and the ordering caveat that is the actual integration hazard. The shortcut says A because it is longer and friendlier."
     },
     {
       "pairId": "P3",
@@ -427,7 +427,7 @@
         ]
       },
       "catches": "The junior engineer asked about a bug in our code and got a definition they could have found on Wikipedia. Worse, A recommends a mutex, which will not work here because the requests are on different pods — that is a wrong fix dressed as general advice. B names the interleaving, the two functions, the file, and the fix that actually works in a multi-pod deployment.",
-      "note": "Rubric picks B (B — the situated diagnosis, undefined band); A — the generic lecture scores in the undefined band. The junior engineer asked about a bug in our code and got a definition they could have found on Wikipedia. Worse, A recommends a mutex, which will not work here because the requests are on different pods — that is a wrong fix dressed as general advice. B names the interleaving, the two functions, the file, and the fix that actually works in a multi-pod deployment."
+      "note": "Rubric picks B (B — the situated diagnosis, publishable band); A — the generic lecture scores in the ai-slop band. The junior engineer asked about a bug in our code and got a definition they could have found on Wikipedia. Worse, A recommends a mutex, which will not work here because the requests are on different pods — that is a wrong fix dressed as general advice. B names the interleaving, the two functions, the file, and the fix that actually works in a multi-pod deployment."
     },
     {
       "pairId": "P4",
@@ -515,7 +515,7 @@
         ]
       },
       "catches": "The shortcut here is different from the other three: A sounds cautious and humble, which reads as responsible to a reviewer skimming for tone. But the prompt asked for a Known limitations section, and \"may not be supported\" is not a limitation — it is a refusal to state one. B is the only response that answers the question that was asked, and the ISO 8601 reference in claim (3) is the kind of specific that a reviewer can check.",
-      "note": "Rubric picks B (B — the enumerated answer, undefined band); A — the hedged answer scores in the undefined band. The shortcut here is different from the other three: A sounds cautious and humble, which reads as responsible to a reviewer skimming for tone. But the prompt asked for a Known limitations section, and \"may not be supported\" is not a limitation — it is a refusal to state one. B is the only response that answers the question that was asked, and the ISO 8601 reference in claim (3) is the kind of specific that a reviewer can check."
+      "note": "Rubric picks B (B — the enumerated answer, publishable band); A — the hedged answer scores in the ai-slop band. The shortcut here is different from the other three: A sounds cautious and humble, which reads as responsible to a reviewer skimming for tone. But the prompt asked for a Known limitations section, and \"may not be supported\" is not a limitation — it is a refusal to state one. B is the only response that answers the question that was asked, and the ISO 8601 reference in claim (3) is the kind of specific that a reviewer can check."
     }
   ],
   "checks": [
